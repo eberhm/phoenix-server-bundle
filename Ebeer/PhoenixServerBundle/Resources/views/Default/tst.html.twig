@@ -1,0 +1,11 @@
+Hello {{ files }}!
+
+{{ requirejs('test.js') }}
+{{ requirejs('test2.js') }}
+{{ requirejs('test3.js') }}
+{{ requirejs('test4.js') }}
+
+
+<script type="application/javascript">
+{{ initJs()|raw }}
+</script>
