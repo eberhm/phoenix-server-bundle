@@ -10,5 +10,10 @@
             "name": "Eber Herrera",
             "email": "eberhm@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-0": { "Ebeer\\PhoenixServerBundle": "" }
+    },
+
+    "target-dir": "Ebeer/PhoenixServerBundle"
 }
