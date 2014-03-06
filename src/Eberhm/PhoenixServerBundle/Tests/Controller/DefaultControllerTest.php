@@ -1,6 +1,6 @@
 <?php
 
-namespace Ebeer\PhoenixServerBundle\Tests\Controller;
+namespace Eberhm\PhoenixServerBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

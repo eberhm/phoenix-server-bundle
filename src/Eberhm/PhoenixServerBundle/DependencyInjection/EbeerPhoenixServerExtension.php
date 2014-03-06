@@ -1,6 +1,6 @@
 <?php
 
-namespace Ebeer\PhoenixServerBundle\DependencyInjection;
+namespace Eberhm\PhoenixServerBundle\DependencyInjection;
 
 use Phoenix\Loader\Loader as Phoenix;
 use Symfony\Component\DependencyInjection\Container;
@@ -15,7 +15,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class EbeerPhoenixServerExtension extends Extension
+class EberhmPhoenixServerExtension extends Extension
 {
     /**
      * {@inheritDoc}

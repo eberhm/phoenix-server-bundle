@@ -1,6 +1,6 @@
 <?php
 
-namespace Ebeer\PhoenixServerBundle\Twig\Extension;
+namespace Eberhm\PhoenixServerBundle\Twig\Extension;
 
 use Phoenix\Asset\UrlDecorator\Base;
 use Phoenix\Asset\UrlDecorator\Cdn;

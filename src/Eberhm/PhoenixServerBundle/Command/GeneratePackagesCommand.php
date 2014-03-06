@@ -1,6 +1,6 @@
 <?php
 
-namespace Ebeer\PhoenixServerBundle\Command;
+namespace Eberhm\PhoenixServerBundle\Command;
 
 use Phoenix\Command\GeneratePackages;
 use Symfony\Component\Console\Input\InputInterface;
@@ -18,12 +18,12 @@ class GeneratePackagesCommand extends GeneratePackages implements ContainerAware
     protected function configure()
     {
         $this
-            ->setName('ebeer:phoenix:generate-packages')
+            ->setName('Eberhm:phoenix:generate-packages')
             ->setDescription('Generates JS packages')
             ->setHelp(<<<EOT
-The <info>ebeer:phoenix:generate-packages</info> command generates all js packages defined in the application:
+The <info>Eberhm:phoenix:generate-packages</info> command generates all js packages defined in the application:
 
-  <info>php app/console ebeer:phoenix:generate-packages</info>
+  <info>php app/console Eberhm:phoenix:generate-packages</info>
 EOT
             );
     }
@@ -35,7 +35,7 @@ EOT
      */
     protected function getConfig(InputInterface $input, OutputInterface $output)
     {
-        return $this->getContainer()->get('ebeer.phoenix.loader')->getConfig();
+        return $this->getContainer()->get('Eberhm.phoenix.loader')->getConfig();
     }
 
     /**

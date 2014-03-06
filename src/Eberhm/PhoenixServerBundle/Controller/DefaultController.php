@@ -1,6 +1,6 @@
 <?php
 
-namespace Ebeer\PhoenixServerBundle\Controller;
+namespace Eberhm\PhoenixServerBundle\Controller;
 
 use Phoenix\Loader\Loader;
 use Phoenix\Optimizer\Optimizer;
@@ -16,7 +16,7 @@ class DefaultController extends Controller
      */
     public function jsAction($batch)
     {
-        $optimizer = new Optimizer($this->get('ebeer.phoenix.loader')->getConfig());
+        $optimizer = new Optimizer($this->get('Eberhm.phoenix.loader')->getConfig());
 
         return new Response($optimizer->optimizeFiles(Loader::getInstance()->translateBatch($batch)));
     }
