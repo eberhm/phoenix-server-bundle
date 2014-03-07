@@ -18,12 +18,12 @@ class GeneratePackagesCommand extends GeneratePackages implements ContainerAware
     protected function configure()
     {
         $this
-            ->setName('Eberhm:phoenix:generate-packages')
+            ->setName('eberhm:phoenix:generate-packages')
             ->setDescription('Generates JS packages')
             ->setHelp(<<<EOT
-The <info>Eberhm:phoenix:generate-packages</info> command generates all js packages defined in the application:
+The <info>eberhm:phoenix:generate-packages</info> command generates all js packages defined in the application:
 
-  <info>php app/console Eberhm:phoenix:generate-packages</info>
+  <info>php app/console eberhm:phoenix:generate-packages</info>
 EOT
             );
     }
@@ -35,7 +35,7 @@ EOT
      */
     protected function getConfig(InputInterface $input, OutputInterface $output)
     {
-        return $this->getContainer()->get('Eberhm.phoenix.loader')->getConfig();
+        return $this->getContainer()->get('eberhm.phoenix.loader')->getConfig();
     }
 
     /**

@@ -16,7 +16,7 @@ class DefaultController extends Controller
      */
     public function jsAction($batch)
     {
-        $optimizer = new Optimizer($this->get('Eberhm.phoenix.loader')->getConfig());
+        $optimizer = new Optimizer($this->get('eberhm.phoenix.loader')->getConfig());
 
         return new Response($optimizer->optimizeFiles(Loader::getInstance()->translateBatch($batch)));
     }

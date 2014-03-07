@@ -4,11 +4,11 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
-        <service id="Eberhm.twig.phoenix_extension" class="Eberhm\PhoenixServerBundle\Twig\Extension\PhoenixExtension">
+        <service id="eberhm.twig.phoenix_extension" class="Eberhm\PhoenixServerBundle\Twig\Extension\PhoenixExtension">
             <tag name="twig.extension" />
-            <argument type="service" id="Eberhm.phoenix.loader" />
+            <argument type="service" id="eberhm.phoenix.loader" />
         </service>
-        <service id="Eberhm.phoenix.loader" class="Phoenix\Loader\Loader" factory-class="Phoenix\Loader\Loader" factory-method="init">
+        <service id="eberhm.phoenix.loader" class="Phoenix\Loader\Loader" factory-class="Phoenix\Loader\Loader" factory-method="init">
             <argument>%phoenix.config%</argument>
         </service>
     </services>
