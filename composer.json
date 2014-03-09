@@ -2,7 +2,7 @@
     "name": "eberhm/phoenix-server-bundle",
     "description": "This bundle integrates eberhm/phoenix library into Symfony2 framework as a bundle.",
     "require": {
-        "eberhm/phoenix": "v0.2.4"
+        "eberhm/phoenix": "0.2.5"
     },
     "license": "MIT",
     "authors": [

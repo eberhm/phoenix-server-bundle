@@ -26,11 +26,19 @@ class Configuration implements ConfigurationInterface
                 ->scalarNode('jsRootFolder')->isRequired()->cannotBeEmpty()->end()
                 ->scalarNode('publicRootFolder')->isRequired()->cannotBeEmpty()->end()
                 ->scalarNode('batchSize')->defaultNull()->end()
-//                ->arrayNode('packages')
-//                    ->prototype('array')
-//                    ->end()
+                ->arrayNode('packages')->isRequired()
+                    ->useAttributeAsKey('name')
+                    ->prototype('array')
+                        ->children()
+                            ->arrayNode('files')
+                                ->cannotBeEmpty()->prototype('scalar')->end()
+                            ->end()
+                        ->end()
+                    ->end()
                 ->end()
-            ;
+            ->end()
+        ->end()
+        ;
 
 
         return $treeBuilder;

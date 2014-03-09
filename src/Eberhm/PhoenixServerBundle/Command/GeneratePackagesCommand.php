@@ -35,7 +35,15 @@ EOT
      */
     protected function getConfig(InputInterface $input, OutputInterface $output)
     {
-        return $this->getContainer()->get('eberhm.phoenix.loader')->getConfig();
+        $config = $this->getContainer()->get('eberhm.phoenix.loader')->getConfig();
+        $packages = [];
+        foreach ($config['packages'] as $packageName => $package) {
+            $packages[$packageName] = $package['files'];
+        }
+
+        $config['packages'] = $packages;
+
+        return $config;
     }
 
     /**
