@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "3de756ddae9d7a72ed22e87263596661",
+    "hash": "ad289dc41041ccd44ce8e948647b739e",
     "packages": [
         {
             "name": "eberhm/phoenix",
-            "version": "v0.2.5",
+            "version": "v0.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eberhm/phoenix.git",
-                "reference": "5941387c866863660ac1caefc86a101a919c1449"
+                "reference": "a549dc7b9bf45f924f8022b505aff2eb2e98327c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eberhm/phoenix/zipball/5941387c866863660ac1caefc86a101a919c1449",
-                "reference": "5941387c866863660ac1caefc86a101a919c1449",
+                "url": "https://api.github.com/repos/eberhm/phoenix/zipball/a549dc7b9bf45f924f8022b505aff2eb2e98327c",
+                "reference": "a549dc7b9bf45f924f8022b505aff2eb2e98327c",
                 "shasum": ""
             },
             "require": {
@@ -44,7 +44,7 @@
                 }
             ],
             "description": "JS Assets Loader/Optimizer for php Web Applications",
-            "time": "2014-03-07 08:01:38"
+            "time": "2014-03-09 13:12:39"
         },
         {
             "name": "kriswallsmith/assetic",
